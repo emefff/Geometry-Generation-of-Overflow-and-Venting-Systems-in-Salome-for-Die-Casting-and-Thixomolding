@@ -1,2 +1,6 @@
 # Geometry-Generation-of-Overflow-and-Venting-Systems-in-Salome-for-Die-Casting-and-Thixomolding
-Python scripting in Salome for auto-generating overflows and venting lines for die-casting and Thixomolding
+
+The included scripts (one is for testing creating overflows) generate typical overflows and venting lines in Salome. The function create_overflow creates an overflow with a connector attached to it. The connector is just a straight extruded trapezoid with a draft angle, of course its dimensions may be altered. Tool designers want the metal flow inside the overflow as bad a possible, meaning metal entering the overflow via the connector should not pass directly to the exit of the overflow (the exit of the overflow is the position of venting line), because it would prematurely close the venting line. This way, venting of the tool is very ineffective, thus we want the metal to enter the overflow in such a way it directly 'crashes' into a wall of the overflow. This is what the offset is for, here called of_offset. If you run test_overflow.py in Salome, seven different overflows are created, they look like this (for the image below, they were translated to -Y to separate them from the origin):
+
+![Bildschirmfoto vom 2024-01-18 13-27-58](https://github.com/emefff/Geometry-Generation-of-Overflow-and-Venting-Systems-in-Salome-for-Die-Casting-and-Thixomolding/assets/89903493/ea241464-07b3-4a65-ab83-b58af692492e)
+

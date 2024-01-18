@@ -13,6 +13,7 @@ In this script, create_overflow() is also used. The third function used in this 
 
 ![Bildschirmfoto vom 2024-01-18 13-55-51](https://github.com/emefff/Geometry-Generation-of-Overflow-and-Venting-Systems-in-Salome-for-Die-Casting-and-Thixomolding/assets/89903493/201ee11c-a37b-4c64-9f68-16b9fece732f)
 
-Real tools can be quite complicated with slanted parts, slanted overflow and venting lines. However, the shared scripts are very easy to use, especially for flat parts and overflows and vents in the XY-plane. In complicated cases, the shared functions might not be super-useful, but can give a first sketch or estimate. Use at your own risk.
+The generated bodies are limited in tolerance to 1E-3, otherwise Salome does not allow for basic boolean functions like fusing etc. It is very picky about that.
+Real tools can be quite complicated with slanted parts, slanted overflow and venting lines and weird parting lines. However, the shared scripts are very easy to use, especially for flat parts and overflows and vents in the XY-plane. In complicated cases, the shared functions might not be super-useful, but can give a first sketch or estimate. Use at your own risk.
 
 emefff@gmx.at
